@@ -4,7 +4,7 @@ import time
 from networktables import NetworkTablesInstance
 
 ntinst = NetworkTablesInstance.getDefault()
-ntinst.initialize()
+# ntinst.initialize()
 
 # ntinst.startClientTeam(830)
 ntinst.startClient(('localhost', 1735))
