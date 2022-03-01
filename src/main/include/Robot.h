@@ -8,6 +8,8 @@
 
 class Robot : public frc::TimedRobot {
  public:
+  Robot();
+
   void RobotInit() override;
   void RobotPeriodic() override;
 
