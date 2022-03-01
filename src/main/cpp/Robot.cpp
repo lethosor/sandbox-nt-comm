@@ -23,9 +23,6 @@ void Robot::TeleopInit() {}
 void Robot::TeleopPeriodic() {
   using namespace std;
 
-  nt::NetworkTableInstance networkTableInstance = nt::NetworkTableInstance::GetDefault();
-  std::shared_ptr<nt::NetworkTable> visionTab = networkTableInstance.GetTable("Shuffleboard")->GetSubTable("vision");
-
   int test = visionTab->GetNumber("test", 0);
   cout << "test = " << test << endl;
 

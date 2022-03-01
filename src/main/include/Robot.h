@@ -7,6 +7,9 @@
 #include <frc/TimedRobot.h>
 
 class Robot : public frc::TimedRobot {
+  nt::NetworkTableInstance networkTableInstance = nt::NetworkTableInstance::GetDefault();
+  std::shared_ptr<nt::NetworkTable> visionTab = networkTableInstance.GetTable("Shuffleboard")->GetSubTable("vision");
+
  public:
   Robot();
 
