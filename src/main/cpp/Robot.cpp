@@ -28,6 +28,8 @@ void Robot::TeleopPeriodic() {
 
   int test = visionTab->GetNumber("test", 0);
   cout << "test = " << test << endl;
+
+  visionTab->PutNumber("test-robot", test);
 }
 
 void Robot::DisabledInit() {}
